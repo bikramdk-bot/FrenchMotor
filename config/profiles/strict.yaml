@@ -1,0 +1,10 @@
+runtime:
+  profile_name: strict
+
+validation:
+  policy_level:
+    max_null_fraction: 0.0
+    min_exposure: 0.001
+  claim_level:
+    max_null_fraction: 0.0
+    min_claim_amount: 0.0

@@ -1,0 +1,17 @@
+validation:
+  policy_level:
+    unique_key: policy_id
+    required_non_null_columns:
+      - policy_id
+      - exposure
+      - claim_count
+      - claim_amount
+    min_exposure: 0.001
+    max_null_fraction: 0.0
+  claim_level:
+    required_non_null_columns:
+      - claim_row_id
+      - policy_id
+      - claim_amount
+    min_claim_amount: 0.0
+    max_null_fraction: 0.0

@@ -1,0 +1,28 @@
+paths:
+  raw_data_dir: data/raw
+  interim_data_dir: data/interim
+  curated_data_dir: data/curated
+  model_input_dir: data/model_input
+  simulated_data_dir: data/simulated
+  models_dir: reports/models
+
+data:
+  random_state: 42
+  synthetic_rows: 5000
+
+training:
+  test_size: 0.2
+  random_state: 42
+  poisson_alpha: 1.0
+  gamma_alpha: 0.5
+  max_iter: 400
+
+simulation:
+  future_years: 3
+  data_drift_rate: 0.06
+  concept_drift_rate: 0.08
+  enable_leakage: false
+
+monitoring:
+  psi_threshold: 0.2
+  performance_rmse_threshold: 900.0

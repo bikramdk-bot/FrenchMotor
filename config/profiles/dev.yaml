@@ -1,0 +1,11 @@
+runtime:
+  profile_name: dev
+
+data:
+  synthetic_rows: 2000
+
+validation:
+  policy_level:
+    max_null_fraction: 0.01
+  claim_level:
+    max_null_fraction: 0.01

@@ -1,0 +1,11 @@
+modeling:
+  input_path: data/model_input/mtpl_model_input.csv
+  artifacts_dir: modeling/artifacts
+  evaluation_dir: modeling/evaluation
+
+training:
+  test_size: 0.2
+  random_state: 42
+  poisson_alpha: 1.0
+  gamma_alpha: 0.5
+  max_iter: 400

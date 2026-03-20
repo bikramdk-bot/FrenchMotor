@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+
+# Public data (raw source archives, not committed)
+public_data/
+
+# Data outputs (generated, not committed)
+data/interim/
+data/curated/
+data/model_input/
+data/simulated/
+
+# Model artifacts
+modeling/artifacts/
+reports/models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db

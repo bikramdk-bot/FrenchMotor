@@ -13,9 +13,25 @@ data:
 training:
   test_size: 0.2
   random_state: 42
+  use_xgboost: true
+  n_splits: 5
   poisson_alpha: 1.0
   gamma_alpha: 0.5
   max_iter: 400
+  xgb_freq_params:
+    learning_rate: 0.05
+    max_depth: 6
+    n_estimators: 200
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+  xgb_sev_params:
+    learning_rate: 0.05
+    max_depth: 6
+    n_estimators: 200
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
 
 simulation:
   future_years: 3
